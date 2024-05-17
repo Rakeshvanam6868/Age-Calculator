@@ -66,7 +66,8 @@ h6{
 p{
     font-size:10px;
     font-weight:800;
-    color:
+    font-style: italic; 
+    color: hsl(0, 0%, 8%);
 }
 
 .logo__line{
@@ -107,4 +108,43 @@ h1{
 .button:hover{
     cursor:pointer;
     background: hsl(0, 0%, 8%);
+}
+
+@media (width <= 431px){
+
+    .card{
+        padding:20px;
+    }
+
+    .input{
+        display:flex;
+        gap:15px;
+    }
+
+    .box{
+        display:inline-block;
+        height:40px;
+        width:90px;
+        padding:10px;
+        border-radius:5px;
+        font-size: 20px;
+        font-weight:800;
+        border:2px solid black;
+    }
+
+    .container{
+        width:380px;
+    }
+
+    h1{
+        font-size: 50px;
+        font-weight:1400; 
+        font-style: italic; 
+        color: hsl(0, 0%, 8%);
+    }
+
+    .logo__line{
+        margin-top:30px;
+    }
+
 }

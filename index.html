@@ -15,24 +15,27 @@
     <div class="container">
       <div class="input">
         <div class="block">
-          <h6>DAY</h6>
+          <h6 id="day-head">DAY</h6>
           <input type="text" id="day" class="box" placeholder="DD" maxlength="2">
-          <p class="hidden"><i>This field is required</i></p>
+          <p class="hidden" id="dayError"><i>This field is required</i></p>
         </div>
         <div class="block">
-          <h6>MONTH</h6>
+          <h6 id="month-head">MONTH</h6>
           <input type="text" id="month" class="box " placeholder="MM" maxlength="2">
-          <p class="hidden"><i>This field is required</i></p>
+          <p class="hidden" id="monthError"><i>This field is required</i></p>
         </div>
         <div class="block">
-          <h6>YEAR</h6>
+          <h6 id="year-head">YEAR</h6>
           <input type="text" id="year" class="box" placeholder="YYYY" maxlength="4">
-          <p class="hidden"><i>This field is required</i></p>
+          <p class="hidden" id="yearError"><i>This field is required</i></p>
         </div>
       </div>
       <div class="logo__line">
         <hr>
-        <img src="./assets/images/icon-arrow.svg" alt="" class="button">
+        <div class="imageBtn">
+          <img src="./assets/images/icon-arrow.svg" alt="" class="button">
+        </div>
+        <hr id="lineRemove">
       </div>
       <div class="output">
         <h1><span id="y">--</span> years</h1>
